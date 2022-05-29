@@ -1,0 +1,131 @@
+/* Overpass Regular 400  */
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* Overpass Bold 700  */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap');
+
+
+:root {
+--orange : hsl(25, 97%, 53%);
+--white: hsl(0, 0%, 100%);
+--mediumGrey:hsl(216, 12%, 54%);
+--darkBlue:hsl(213, 19%, 18%);
+--veryDarkBlue:hsl(216, 12%, 8%);
+--fSize15:15px;
+--Overpass: 'Overpass';
+--400 : 400;
+--700 : 700;
+}
+
+
+body {
+background-color: var(--veryDarkBlue);
+font-family: var(--Overpass);
+}
+
+a {
+text-decoration: none;
+}
+
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 50vh;
+}
+
+.rating {
+border-radius: 10px;
+padding:1.5em;
+background-image:linear-gradient(#222933,#171E28);
+margin-top: 5.5em;
+
+}
+
+.logo {
+border-radius: 50%;
+background-color: var(--darkBlue);
+padding:.7em;
+}
+
+h1 {
+color:var(--white);
+font-size: 1.5em;
+font-weight: 700;
+margin-bottom: -6px;
+}
+
+p {
+color: var(--mediumGrey);
+font-size: 12px;
+line-height: 1.5em;
+}
+
+.numbers {
+display: flex;
+justify-content: center;
+}
+
+label {
+background-color: var(--darkBlue);
+margin-right: 1em;
+border-radius: 50%;
+position: relative;
+padding:.5em .8em .4em;
+color:var(--mediumGrey);
+font-weight: 700;
+cursor:pointer;
+}
+
+.number4:active{
+background-color:var(--mediumGrey);
+color:var(--white);
+}
+
+.number5:active{
+background-color:var(--orange);
+color:var(--white);
+}
+input[type="radio"] {
+position: absolute;
+visibility: hidden;
+}
+
+input[type="submit"] {
+
+color:var(--white);
+background-color: var(--orange);
+border-radius: 30px;
+width: 100%;
+text-align: center;
+text-transform: uppercase;
+font-weight: 400;
+padding-top: .6em;
+padding-bottom: .5em;
+font-size: 14px;
+letter-spacing: 2px;
+border:0;
+cursor: pointer;
+}
+
+input[type="submit"]:active {
+background-color:var(--white);
+color:var(--orange);
+}
+.attribution { 
+font-size: 18px;
+text-align: center;
+color:var(--white);
+margin-top: .1em;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:992px){
+h1 + p {
+font-size: 11px;
+}
+
+}

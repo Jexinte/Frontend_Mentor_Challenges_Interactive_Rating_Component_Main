@@ -1,0 +1,85 @@
+/* Overpass Regular 400  */
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* Overpass Bold 700  */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap');
+
+
+:root {
+--orange : hsl(25, 97%, 53%);
+--white: hsl(0, 0%, 100%);
+--mediumGrey:hsl(216, 12%, 54%);
+--darkBlue:hsl(213, 19%, 18%);
+--veryDarkBlue:hsl(216, 12%, 8%);
+--fSize15:15px;
+--Overpass: 'Overpass';
+--400 : 400;
+--700 : 700;
+}
+
+
+body {
+background-color: var(--veryDarkBlue);
+font-family: var(--Overpass);
+}
+
+a {
+text-decoration: none;
+}
+
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 50vh;
+}
+
+.rating {
+border-radius: 10px;
+padding:1.5em;
+background-image:linear-gradient(#222933,#171E28);
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+.selectedNumber {
+margin-top: 19px;
+font-size: 14px;
+color:var(--orange);
+background-color: hsl(213, 19%, 18%);
+border-radius: 20px;
+padding:.6em .8em;
+}
+
+.thanks {
+color:var(--white);
+font-size: 1.8em;
+font-weight: var(--700);
+margin-bottom: -2px;
+}
+
+.moreThanks {
+font-size:12px;
+color:var(--mediumGrey);
+font-weight: var(--400);
+line-height: 1.6em;
+text-align: center;
+}
+
+.attribution { 
+font-size: 18px; 
+text-align: center;
+color:var(--white);
+margin-top: .1em;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:992px) {
+     .thanks {
+          margin-top: 7.8px;
+     }
+}

@@ -2,48 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Interactive rating component - Yokke</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+
 </head>
 <body>
+<main>
 
-  <!-- Rating state start -->
+  <section class="container">
 
-  How did we do?
+      <!-- Rating state start -->
+      <!-- Un test sera effectué pour voir si le remplacement des input radio est valable par des liens de manière à pouvoir utiliser le focus et ainsi
+      garantir la fonctionnalité du projet -->
+    <article class="rating">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+          <img class="logo" src="./images/icon-star.svg" alt="">
 
-  1 2 3 4 5
+          <h1>How did we do?</h1>
+          <p>Please let us know how we did with your support <br> request. All feedback is appreciated 
+            to help us <br> improve our offering!</p>
 
-  Submit
+          <form action="thanks.html?number" method="get">
+            <article class="numbers">
 
-  <!-- Rating state end -->
+              <label class="number1Selected" for="number1">1</label>
+              <input type="radio" name="numbersT"  id="number1" value="1">
+              
+              <label class="number2Selected"  for="number2">
+                <input type="radio" name="numbersT" id="number2" value="2">
+                2
+              </label>
+        
+              <label class="number3Selected" for="number3">
+                <input type="radio" name="numbersT" id="number3" value="3">
+                3
+              </label>
+        
+              <label class="number4Selected" for="number4">
+                <input type="radio" name="numbersT" id="number4" value="4">
+                4
+              </label>
+        
+              <label class="number5Selected" for="number5">
+                <input type="radio" name="numbersT" id="number5" value="5">
+                5
+              </label>
 
-  <!-- Thank you state start -->
+          </article>
+          <br>
+    
+          <input type="submit" value="Submit">
+        </form>
+      
+        <!-- Rating state end -->
+    </article>
+  </section>
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
+ 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Yokke</a>.
   </div>
+</main>
+
+
+  
+<script src="./js/checkTheRightNumber.js"></script>
 </body>
 </html>
